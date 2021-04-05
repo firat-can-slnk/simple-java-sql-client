@@ -1,0 +1,65 @@
+object StrukturDialog: TFGUIForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'StrukturDialog'
+  ClientHeight = 245
+  ClientWidth = 747
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = True
+  Position = poDesigned
+  Visible = True
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnResize = FormResize
+  FrameType = 6
+  Resizable = False
+  Undecorated = False
+  Background = clBtnFace
+  PixelsPerInch = 96
+  TextHeight = 12
+  object jTable1: TJTable
+    Tag = 19
+    Left = 0
+    Top = 0
+    Width = 748
+    Height = 246
+    Hint = 'jTable1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Dialog'
+    Font.Style = []
+    Foreground = 3355443
+    Background = clWhite
+    RowHeight = 20
+    ShowHorizontalLines = True
+    ShowVerticalLines = True
+    ShowGrid = True
+    Columns.Strings = (
+      'Name'
+      'Typ'
+      'Kollation'
+      'Attribute'
+      'Null'
+      'Standard'
+      'Kommentare'
+      'Extra')
+    ColCount = 8
+    RowCount = 5
+    FillsViewportHeight = False
+    AutoCreateRowSorter = False
+    RowSelectionAllowed = True
+    ColumnSelectionAllowed = False
+    CellSelectionEnabled = False
+    DragEnabled = False
+    HorizontalScrollBarPolicy = AS_NEEDED
+    VerticalScrollBarPolicy = AS_NEEDED
+  end
+end
