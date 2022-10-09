@@ -1,9 +1,35 @@
 
 **Warning**
--
+
 This Project is a copy from a school project and I wouldn't recommend to use it before making a few changes, especially code design changes. I don't work on this project anymore. 
+
+---
+
 ![](images/logo.png)
-# Das Projekt
+
+
+# SQL Client Java
+
+Vorwort: Dies ist ein Projekt in Java das ich für den Unterricht in der Schule erstellt habe.
+
+Es handelt sich hierbei um einen SQL Client geschrieben in Java. Mit diesem SQL Client kann man Daten in eine Tabelle hinzufügen und verändern.
+
+Man kann sich zudem die Struktur anzeigen lassen und eigene SQL Befehle ausführen.
+
+Das Programm ist sehr einfach aufgebaut und unterstützt nur das einfache bearbeiten/einfügen/löschen von Datensätzen.
+
+Das Programm ist unter der GNU GPL lizensiert.
+
+# Installation
+
+Es gibt zwei Möglichkeiten das Programm zu kompilieren
+
+- Bindet die mysql-connector-java-8.0.11.jar in das Projekt ein
+- Packt den "com"-Ordner in den Projektordner und kompiliert die Dateien danach
+
+# Documentation
+
+## Das Projekt
 *   Datenbankverwaltung in Java
 *   Kompatibilität mit jeder MySQL Datenbank
 *   Anzeigen der SQL Strukturen der Tabellen
@@ -14,23 +40,23 @@ This Project is a copy from a school project and I wouldn't recommend to use it 
 *   Interaktive Fehlerausgabe
 *   In Java-Editor erstellt
 
-## Warum dieses Projekt
+### Warum dieses Projekt
 Ich habe eine Datenbankverwaltung als Projekt gewählt da es für mich einen Mehrwert bietet, ich habe vor das Programm in Zukunft selbst zu nutzen, um schnell und einfach meine Datenbanken zu verwalten und einzusehen.
 
-## Inspiration
+### Inspiration
 Ich habe mich von verschiedenen Verwaltungsprogrammen inspirieren lassen und habe die, für mich, nützlichsten Funktionen übernommen.
 
-## Herangehensweise
+### Herangehensweise
 Ich habe mich zuerst auf die Erstellung der JFrames beschäftigt und mir dabei die wichtigsten Funktionen einer Datenbankverwaltung überlegt.
 
 Als die JFrames fertig waren habe ich die Funktionen zum Herstellen der Verbindung zur Datenbank erstellt.
 
 Danach habe ich nacheinander die einzelnen Funktionen hinzugefügt.
 
-## Genutzte Programme
+### Genutzte Programme
 Als Entwicklungsumgebung kam zu Anfang der Java-Editor zum Einsatz, für die Finale Kompilierung und Umwandelung in eine .jar Datei wurde Eclipse verwendet.
 
-## Aufgetretene Fehler und Probleme
+### Aufgetretene Fehler und Probleme
 Während der Programmierung sind immer wieder kleinere Fehler aufgetreten, die ich mit einer schnellen Suche im Internet allerdings lösen konnte.
 
 Ein Beispiel war zum Beispiel die Erstellung von ListSelectionActionListenern, dazu habe ich nach kurzer suche eine ausführliche Beschreibung im Internet gefunden.
@@ -43,9 +69,9 @@ Leider habe ich dazu keine Lösungen gefunden die gut umzusetzen waren. Da eine 
 
 Am Ende könnte sich die MySQL Bibliothek nicht korrekt in das Projekt einbinden weshalb ich Eclipse zum erstellen einer .jar Datei nutzen musste.
 
-# Anleitung
+## Anleitung
 
-## Verbindung herstellen
+### Verbindung herstellen
 Um eine Verbindung herstellen zu können müssen Sie die Daten der MySQL-Datenbank in den Client einfügen.
 
 Benötigt wird die Server Adresse und der Benutzername.
@@ -58,17 +84,17 @@ Nachdem alle Daten eingetragen wurden müssen Sie auf den Verbinden-Button drüc
 
 ![](images/1.png)
 
-## Dantenbank auswählen
+### Dantenbank auswählen
 Wenn Sie bei der Verbindungsherstellung keine Datenbank eingetragen haben können Sie aus der Liste der Datenbanken eine Datenbank auswählen.
 
 Es werden alle Datenbanken angezeigt, auf die der Benutzer Zugriff hat.
 
-## Tabelle auswählen
+### Tabelle auswählen
 Die Tabelle können Sie in der Liste der Tabellen auswählen, der Tabelleninhalt wird dann als eine Tabelle angezeigt.
 
 ![](images/2.png)
 
-## Datensätze bearbeiten
+### Datensätze bearbeiten
 Um einen Datensatz zu bearbeiten müssen Sie auf diesen einen Doppelklick ausführen.
 
 Daraufhin öffnet sich ein neues Fenster indem die aktuellen Werte des Datensatzes eingetragen sind.
@@ -81,7 +107,7 @@ Wenn keine Fehler aufgetreten sind sollte der Datensatz erfolgreich geändert wo
 
 Wenn Sie nun auf den „Aktualisieren“-Button klicken sollten sie die aktuellen Daten sehen.
 
-## Datensatz löschen
+### Datensatz löschen
 Um einen Datensatz zu löschen wählen Sie diesen in der Tabelle aus und klicken Sie auf den „Löschen“-Button.
 
 Nun sollte ein Fenster mit folgender Meldung erscheinen:
@@ -92,7 +118,7 @@ Nach einem Klick auf den „OK“-Button wird der Datensatz gelöscht.
 
 Wenn Sie den Datensatz gelöscht haben müssen Sie auf den „Aktualisieren“-Button drücken, um die Veränderung zu sehen.
 
-## Datensatz einfügen
+### Datensatz einfügen
 Um einen neuen Datensatz in die Tabelle einzufügen, müssen sie auf den „Einfügen“-Button klicken.
 
 Daraufhin öffnet sich ein neues Fenster, in dem sich die Struktur der aktuellen Tabelle öffnet.
@@ -103,7 +129,7 @@ Klicken Sie daraufhin auf den „OK“-Button.
 
 Wenn keine Fehler auftreten wurde der Datensatz erfolgreich in die Tabelle eingefügt.
 
-## SQL Befehl ausführen
+### SQL Befehl ausführen
 Um einen SQL Befehl auszuführen müssen Sie auf den Button „SQL Befehl“ klicken.
 
 ![](images/5.png)
@@ -112,7 +138,7 @@ Danach sollte ein Fenster mit einem Textfeld erscheinen.
 
 In das Textfeld muss der SQL Befehl eingegeben werden, danach bestätigen Sie Ihre Eingabe mit einem Klick auf den „OK“-Button.
 
-## Struktur einer Tabelle anzeigen
+### Struktur einer Tabelle anzeigen
 Bevor Sie die SQL Struktur angezeigt werden kann müssen Sie eine Tabelle auswählen.
 
 Mit einem Klick auf den „Struktur“-Button öffnet sich dann ein Fenster, das die aktuelle SQL Struktur der ausgewählten Tabelle anzeigt.
@@ -126,8 +152,8 @@ Mit einem Klick auf den „Struktur“-Button öffnet sich dann ein Fenster, das
 *   COLUMN_DEFAULT: Gibt den Standardwert der Spalte an
 *   EXTRA: Zusätzliche Informationen
 
-# Zusätzliche Funktionen
-## Fehlerausgabe
+## Zusätzliche Funktionen
+### Fehlerausgabe
 Der SQL Client bietet eine moderne Fehlerausgabe, die alle Fehler, die während und vor der Verbindung entstehen aufzählt.
 
 Alle Fehler sind bereits ausreichend beschrieben und sind leicht nachzuvollziehen.
